@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-int _printf(const char *format, ...);
-int _putchar(char c);
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -17,6 +16,9 @@ typedef struct format
 	char *id;
 	int (*f)();
 } convert_match;
+
+int _putchar(char c);
+int _printf(const char *format, ...);
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
